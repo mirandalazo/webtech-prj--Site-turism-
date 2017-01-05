@@ -32,6 +32,27 @@ var Region = sequelize.define('Regions', {
 
 });
 
+var City = sequelize.define('Cities',{
+    name:{
+        type: Sequelize.STRING,
+        field:'name'
+    },
+    description:{
+        type:Sequelize.STRING,
+        field:'description'
+    },
+    photo:{
+        type:Sequelize.UUID,
+        field:'photo'
+    },
+    id_region:{
+        type:Sequelize.INTEGER,
+        field:'id_region'
+    }
+}, {
+    timestamps:false
+});
+
 // app.post('/regions', function(req,res) {
 //     Region.create(req.body).then(function(region) {
 //         Region.findById(region.id).then(function(region) {
@@ -40,10 +61,24 @@ var Region = sequelize.define('Regions', {
 //     });
 // });
 
+app.get('/cities',function(request, response) {
+    City.findAll().then(function(cities){
+        response.status(200).send(cities);
+    });
+});
+
 app.get('/regions', function(request,response){
     //Region.findAll().then(function(regions){
         response.status(200).send({name:"Transylvania", description:"Transylvania is home to some of Europe's best-preserved medieval towns, most notably Brasov, featuring Old Saxon architecture and citadel ruins."});
     //});
 });
+
+// app.post('/regions',function(req,res){
+//     Region.create(req.body).then(function(region){
+//         Region.findById(region.id).then(function(region){
+//             res.status(201).send(region);
+//         });
+//     });
+// });
 
 app.listen(process.env.PORT);

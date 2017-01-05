@@ -1,0 +1,54 @@
+.navbar.tall {
+    min-height: 70px;
+}
+#header a {
+    color: #393f43;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    /*clear: both;
+    position: absolute;*/
+    height: 60px;
+    bottom:0;
+    width: 100%;
+    background-color: gray;
+
+}
+
+footer .copyright-container{
+  font-size:110px;
+}
+
+footer .copyright-container, footer .back-to-top {
+    display: inline-block;
+}
+footer .back-to-top a {
+    color: #16A085;
+    opacity: 0.87;
+    margin-left: 10px;
+}
+footer .back-to-top a i {
+    -webkit-transition: -webkit-transform .8s ease-in-out;
+    transition: transform .8s ease-in-out;
+}
+footer .back-to-top a i:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+
+img {
+  width:100%;
+
+}
+
+.item{
+  height: 700px;
+}
+
