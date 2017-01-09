@@ -1,0 +1,25 @@
+.row h2,button{
+    margin-top:100px;
+}
+.row h2{
+    text-align: center;
+}
+
+#btnAdd{
+    margin-left: 80px;
+}
+#btnAdd:hover{
+    background-color: #f49e42;
+}
+
+#destinations{
+    border:2px solid black;
+    border-radius: 5px;
+}
+
+#destinations ul{
+    list-style: none;
+}
+#destinations li{
+    text-align:center;
+}

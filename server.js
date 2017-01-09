@@ -14,7 +14,7 @@ app.use(cors());
 
 var nodeadmin = require('nodeadmin');
 app.use(nodeadmin(app));
-
+app.use('/admin',express.static('admin'));
 
 
 var Region = sequelize.define('Regions', {
@@ -72,6 +72,14 @@ app.get('/regions', function(request,response){
         response.status(200).send({name:"Transylvania", description:"Transylvania is home to some of Europe's best-preserved medieval towns, most notably Brasov, featuring Old Saxon architecture and citadel ruins."});
     //});
 });
+
+// app.post('/destinations',function(req,res){
+//     City.create(req.body).then(function(city){
+//         City.findById(city.id).then(function(city){
+//             res.status(201).send(city);
+//         });
+//     });
+// });
 
 // app.post('/regions',function(req,res){
 //     Region.create(req.body).then(function(region){
