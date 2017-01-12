@@ -1,51 +1,51 @@
 <!DOCTYPE>
 <html>
-    <head>
-           <link rel="stylesheet" type="text/css" href="/index.css"/>
-           <link rel="stylesheet" href="/style/wishlist.css" type="text/css" />
-           <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-           <script type="text/javascript" src="/js/wishlist.js"></script>
-           
-             <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
-        <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-    </head>
-    <body>
-         <!--<div class="page-wrapper">-->
-        <header id='header'>
-            <nav class="navbar navbar-default navbar-fixed-top tall">
-                <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" data-target="#myNavbar" data-toggle="collapse"
-                                class="btn btn-default btn-lg navbar-toggle">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/index.css" />
+    <link rel="stylesheet" href="/style/wishlist.css" type="text/css" />
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+     <script type="text/javascript" src="/js/wishlist.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
+   
+</head>
+
+<body>
+    <!--<div class="page-wrapper">-->
+    <header id='header'>
+        <nav class="navbar navbar-default navbar-fixed-top tall">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" data-target="#myNavbar" data-toggle="collapse" class="btn btn-default btn-lg navbar-toggle">
                             <span class="glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
                         </button>
-                        <a href="index.html" class="navbar-brand">WandeRO</a>
-                    </div>
-                    <!-- Collection of nav links and other content for toggling -->
-                    <div id="myNavbar" class="collapse navbar-collapse" ng-controller="MenuController">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#">Historical regions</a></li>
-                            <li><a href="#">Cities</a></li>
-                            <li><a href="html/attractions.html">Tourist Attractions</a></li>
-                            <li><a href="#">Wishlist</a></li>
-                            <!-- <li><a href="/#/cart">
+                    <a href="index.html" class="navbar-brand">WandeRO</a>
+                </div>
+                <!-- Collection of nav links and other content for toggling -->
+                <div id="myNavbar" class="collapse navbar-collapse" ng-controller="MenuController">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Historical regions</a></li>
+                        <li><a href="#">Cities</a></li>
+                        <li><a href="html/attractions.html">Tourist Attractions</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <!-- <li><a href="/#/cart">
                               <span class="badge" style="margin-right: 3px"> {{totalProducts}} </span>
                               Cart</a>
                             </li> -->
-                        </ul>
-                    </div>
+                    </ul>
                 </div>
-            </nav>
-        </header>
-        <div class="container">
+            </div>
+        </nav>
+    </header>
+    <div class="container">
         <div class="row">
             <h2>Add a new destination to your wishlist</h2>
             <div class="col-md-4"></div>
             <div class="col-md-4">
-            <button id="btnAdd" class="btn btn-success" data-toggle="modal" data-target="#addRecord">Add destination</button>
+                <button id="btnAdd" class="btn btn-success" data-toggle="modal" data-target="#addRecord">Add destination</button>
             </div>
             <div class="col-md-4"></div>
         </div>
@@ -58,18 +58,18 @@
                     </div>
                     <div class="modal-body">
                         <form id="record_form">
-                            <input type="hidden" name="id" id="id"/>
+                            <input type="hidden" name="id" id="id" />
                             <div class="form-group">
                                 <label for="title">Title</label>
-                                <input type="text" name="title" id="title" placeholder="Title" class="form-control"/>
+                                <input type="text" name="title" id="title" placeholder="Title" class="form-control" />
                             </div>
                             <div class="form-group">
                                 <label for="description">Description</label>
-                                <input type="textarea" name="description" id="descript" placeholder="Description" rows="4" class="form-control"/>
+                                <input type="textarea" name="description" id="descript" placeholder="Description" rows="4" class="form-control" />
                             </div>
                             <div class="form-group">
                                 <label for="photo">Photo</label>
-                                <input type="text" name="photo" id="photo" placeholder="Insert url" class="form-control"/>
+                                <input type="text" name="photo" id="photo" placeholder="Insert url" class="form-control" />
                             </div>
                         </form>
                     </div>
@@ -80,8 +80,8 @@
                 </div>
             </div>
         </div>
-        
-        <div class="row">
+
+        <div class="row" >
             <div class="col-md-4">
                 <div class="records_content">
                     <br/>
@@ -97,8 +97,9 @@
                 </div>
             </div>
         </div>
-        
-        </div>
-       <!--</div>-->
-    </body>
+
+    </div>
+    <!--</div>-->
+</body>
+
 </html>
