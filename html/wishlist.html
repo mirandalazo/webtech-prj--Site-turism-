@@ -1,45 +1,4 @@
-<!DOCTYPE>
-<html>
-
-<head>
-    <link rel="stylesheet" type="text/css" href="/index.css" />
-    <link rel="stylesheet" href="/style/wishlist.css" type="text/css" />
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-     <script type="text/javascript" src="/js/wishlist.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.1/angular-ui-router.js"></script>
-   
-</head>
-
-<body>
-    <!--<div class="page-wrapper">-->
-    <header id='header'>
-        <nav class="navbar navbar-default navbar-fixed-top tall">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" data-target="#myNavbar" data-toggle="collapse" class="btn btn-default btn-lg navbar-toggle">
-                            <span class="glyphicon glyphicon-menu-hamburger " aria-hidden="true"></span>
-                        </button>
-                    <a href="index.html" class="navbar-brand">WandeRO</a>
-                </div>
-                <!-- Collection of nav links and other content for toggling -->
-                <div id="myNavbar" class="collapse navbar-collapse" ng-controller="MenuController">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Historical regions</a></li>
-                        <li><a href="#">Cities</a></li>
-                        <li><a href="html/attractions.html">Tourist Attractions</a></li>
-                        <li><a href="#">Wishlist</a></li>
-                        <!-- <li><a href="/#/cart">
-                              <span class="badge" style="margin-right: 3px"> {{totalProducts}} </span>
-                              Cart</a>
-                            </li> -->
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
+<div ng-controller="WishlistController">
     <div class="container">
         <div class="row">
             <h2>Add a new destination to your wishlist</h2>
@@ -99,7 +58,4 @@
         </div>
 
     </div>
-    <!--</div>-->
-</body>
 
-</html>

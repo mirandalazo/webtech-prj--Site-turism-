@@ -16,8 +16,12 @@ var nodeadmin = require('nodeadmin');
 app.use(nodeadmin(app));
 app.listen(process.env.PORT);
 
-app.use('/admin', express.static('admin'));
+app.use( express.static(__dirname+'/html'));
+//app.use(app.router);
 
+app.get('/', function(req, res) {
+    res.sendFile(__dirname + '/index.html');
+});
 var Region = sequelize.define('Regions', {
 
     name: {
@@ -33,6 +37,7 @@ var Region = sequelize.define('Regions', {
     timestamps: false
 
 });
+
 
 
 
